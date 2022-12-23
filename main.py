@@ -1,8 +1,8 @@
 from flask.views import MethodView
 from wtforms import Form, StringField, SubmitField
 from flask import Flask, render_template, request
-from calories import Calorie
-from temperature import Temperature
+from src.calories import Calorie
+from src.temperature import Temperature
 
 app = Flask(__name__)
 
