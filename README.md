@@ -12,7 +12,7 @@ of the user's location, and calculates how many calories the user needs.
 git clone <repo-url>
 ```
 
-``bash
+```bash
 pip install -r requirements
 ```
 
