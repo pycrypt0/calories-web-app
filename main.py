@@ -4,6 +4,7 @@ from flask import Flask, render_template, request
 from src.calories import Calorie
 from src.temperature import Temperature
 
+
 app = Flask(__name__)
 
 
@@ -49,6 +50,7 @@ class CaloriesForm(Form):
 
 
 app.add_url_rule('/', view_func=HomePage.as_view('home_page'))
-app.add_url_rule('/calories_form', view_func=CaloriesFormPage.as_view('calories_form_page'))
+app.add_url_rule('/calories_form',
+                 view_func=CaloriesFormPage.as_view('calories_form_page'))
 
 app.run(debug=True)

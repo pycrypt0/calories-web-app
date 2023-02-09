@@ -9,7 +9,7 @@ h2 {
     animation: glitch 1s linear infinite;
 }
 
-@keyframes glitch{
+@keyframes glitch {
   2%,64%{
     transform: translate(2px,0) skew(0deg);
   }
@@ -22,19 +22,19 @@ h2 {
 }
 
 h2:before,
-h2:after{
+h2:after {
   content: attr(title);
   position: absolute;
   left: 0;
 }
 
-h2:before{
+h2:before {
   animation: glitchTop 1s linear infinite;
   clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
 }
 
-@keyframes glitchTop{
+@keyframes glitchTop {
   2%,64%{
     transform: translate(2px,-2px);
   }
@@ -46,13 +46,13 @@ h2:before{
   }
 }
 
-h2:after{
+h2:after {
   animation: glitchBotom 1.5s linear infinite;
   clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
 
-@keyframes glitchBotom{
+@keyframes glitchBotom {
   2%,64%{
     transform: translate(-2px,0);
   }
@@ -71,7 +71,7 @@ input[type=text] {
     font-family: 'Courier New', Courier, monospace;
 }
 
-input[type=submit]{
+input[type=submit] {
     width: 80%;
     background-color: rgb(205, 50, 50);
     color: darkgrey;
@@ -82,7 +82,7 @@ input[type=submit]{
     transition: transform .4s;
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover {
 transform: scale(1.3);
 }
 
