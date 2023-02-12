@@ -7,7 +7,7 @@
 </head>
 <body>
 <h2>CALORIES CALCULATION FORM</h2>
-<p>Fill in the form and click the button to know how many calories you need!</p>
+<p>Fill in the form and click the button to calculate how many calories you need today.</p>
 <form action="/calories_form" method="post">
     {{caloriesform.weight.label}} {{caloriesform.weight}}
     <br>
@@ -20,12 +20,12 @@
     <br>
     {{caloriesform.country.label}} {{caloriesform.country}}
     <br>
-<div style="text-align:center"
+<div style="text-align:center">
     <br>
     {{caloriesform.button}}
     <br>
     {% if result==True %}
-    <h3>You need {{calories}} calories (kcal) today</h3>
+    <h3>You need {{calories}} calories (kcal) today!</h3>
     {% endif %}
 </form>
 </body>

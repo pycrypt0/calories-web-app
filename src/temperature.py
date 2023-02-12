@@ -3,10 +3,8 @@ import requests
 
 
 class Temperature:
-
     """A scraper that uses a yml file to read the xpath of a value it needs to extract
      from the timeanddate.com/weather url."""
-
     base_url = 'https://www.timeanddate.com/weather/'
     yml_path = 'temperature.yaml'
 

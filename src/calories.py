@@ -13,7 +13,8 @@ class Calorie:
         self.age = age
 
     def calculate(self):
-        result = 10 * self.weight + 6.5 * self.height + 5 * self.age - self.temperature * 10
+        result = 10 * self.weight + 6.5 * self.height + \
+            5 * self.age - self.temperature * 10
         return result
 
 
